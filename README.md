@@ -1,5 +1,7 @@
 # Captive Portal
 Malicious captive portal to steal credentials and spy on user traffic
+![portal](lockportal_login.png)
+
 
 ## Setup
 This repo is intended for Kali Linux. Clone it into /var/www and then run:
