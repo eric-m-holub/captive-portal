@@ -1,0 +1,206 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('img/splash.jpg'); /* Cool background image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  overflow: hidden;
+}
+
+.login-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-title img {
+  width: 50%;
+}
+
+.login-footer {
+  margin-top: 40px;
+}
+
+#login-form img {
+  width: 40%;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  border: 2px solid transparent;
+}
+
+.social-btn img {
+  height: 45px;
+  margin-right: 10px;
+}
+
+.social-btn:hover {
+  opacity: 0.9;
+}
+
+.social-btn.google {
+  background-color: #db4437;
+  border-color: #db4437;
+}
+
+.social-btn.facebook {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+
+.social-btn.x {
+  background-color: #000;
+  border-color: #000;
+}
+
+.social-btn.apple {
+  background-color: #222;
+  border-color: #222;
+}
+
+.social-btn.linkedin {
+  background-color: #0077b5;
+  border-color: #0077b5;
+}
+
+.social-btn:active {
+  transform: scale(0.98);
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button.login-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.
+  }
+  
+.feedback-container {
+  min-height: 50px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  
+ #spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1.5s linear infinite;
+  visibility: hidden;
+ }
+ 
+ @keyframes spin {
+   0% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+  
+#error-msg {
+  color: red;
+  visibility: hidden;
+  text-align: center;
+}

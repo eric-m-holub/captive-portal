@@ -1,0 +1,73 @@
+
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+	
+	server_name _;
+
+	location / {
+		return 301 http://lockportal.net;
+	}
+	
+}
+
+server {
+	listen 80;
+	listen [::]:80;
+
+	server_name lockportal.net;
+
+	root /var/www/captive-portal;
+	
+	index index.html index.htm index.nginx-debian.html;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+
+	location ~ \.php$ {
+		include snippets/fastcgi-php.conf;
+		fastcgi_pass unix:/run/php/php8.2-fpm.sock;
+	}
+
+
+	location ~* /\. {
+		deny all;
+	}
+	
+	location /generate_204 {
+		return 301 http://lockportal.net;
+	}
+	
+	location /connecttest.txt {
+		return 301 http://lockportal.net;
+	}
+	
+	location /redirect {
+		return 301 http://lockportal.net;
+	}
+	
+	location ~* \.sh$ {
+		deny all;
+	}
+	
+	location ~* \.txt {
+		deny all;
+	}
+	
+	location ~* \.bak {
+		deny all;
+	}
+}
+
+server {
+	listen 80;
+	listen [::]:80;
+
+	server_name captive.apple.com;
+
+
+	location / {
+		return 301 http://lockportal.net;
+	}
+}

