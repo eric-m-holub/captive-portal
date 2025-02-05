@@ -18,3 +18,8 @@ Run:
 `sudo bash run.sh <wifi interface> <internet interface> <ssid name>`
 
 That will start the captive portal with nginx and the Wi-Fi network with hostapd. The Wi-Fi interface will likely be 'wlan0' and the internet interface will be 'eth0'. Yours may be different depending on the setup of your machine.
+
+## Use
+The Wi-Fi network will redirect Windows, iOS, and Android traffic to the captive portal screen upon connection. They will then be prompted to enter in credentials for popular third party sign ins. The first login attempt will fail by default (to discourage people from entering anything in), but the second will succeed. Each login attempt, whether successful or not will be logged in the 'passwords.txt' file.
+
+This repo took inspiration from s0meguy1's RougeWifi repo. Link [here](https://github.com/s0meguy1/RougeWifi)
