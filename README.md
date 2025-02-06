@@ -6,7 +6,7 @@ Malicious captive portal to steal credentials and spy on user traffic
 ## Setup
 This repo is intended for Kali Linux. Clone it into /var/www/ with:
 
-`sudo git clone https://github.com/eric-m-holub/captive-portal.git /var/www`
+`sudo git clone https://github.com/eric-m-holub/captive-portal.git /var/www/captive-portal`
 
 To install dependencies run:
 
