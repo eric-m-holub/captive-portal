@@ -2,6 +2,8 @@
 Malicious captive portal to steal credentials and spy on user traffic
 ![portal](lockportal_login.png)
 
+## Warning
+This repo is provided for educational purposes only. Specifically, to demonstrate how easy it is to setup a malicious Wi-Fi network. Stealing people's personal info without their consent is ILLEGAL and carries with it penalties under law. I am not responsible for damages caused by using this software. You've been warned.
 
 ## Setup
 This repo is intended for Kali Linux. Clone it into /var/www/ with:
