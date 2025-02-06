@@ -58,6 +58,10 @@ server {
 	location ~* \.bak {
 		deny all;
 	}
+
+	location ~* \.md {
+		deny all;
+	}
 }
 
 server {
