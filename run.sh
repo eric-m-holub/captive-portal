@@ -55,6 +55,8 @@ ifconfig $1 192.168.1.1 netmask 255.255.255.0 up
 # modify nginx config to serve captive portal. This will overwrite existing default nginx config, so be sure to back it up
 cp default.bak /etc/nginx/sites-available/default
 ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+
+systemctl restart php8.2-fpm
 systemctl restart nginx
 
 # launch the WiFi network with hostapd
