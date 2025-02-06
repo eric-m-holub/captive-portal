@@ -10,7 +10,7 @@ This repo is intended for Kali Linux. Clone it into /var/www and then run:
 
 That will install the necessary dependencies.
 
-I ran this with an ALFA AWUS1900 Wi-Fi Adapter. You'll want to install the Kali drivers for it and then plug it in prior to running.
+I ran this with an ALFA AWUS1900 Wi-Fi Adapter. You'll want to install the Kali drivers for it and then plug it in prior to running. I wrote a blog post that includes setup for this device. Link [here](https://www.ericholub.com/blog/wifi-deauth/)
 
 ## Running
 Run:
