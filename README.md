@@ -4,13 +4,15 @@ Malicious captive portal to steal credentials and spy on user traffic
 
 
 ## Setup
-This repo is intended for Kali Linux. Clone it into /var/www/ and then run:
+This repo is intended for Kali Linux. Clone it into /var/www/ with:
+
+`sudo git clone https://github.com/eric-m-holub/captive-portal.git /var/www`
+
+To install dependencies run:
 
 `sudo bash install.sh`
 
-That will install the necessary dependencies.
-
-I use an ALFA AWUS1900 Wi-Fi Adapter to broadcast the network. You'll want to install the Kali drivers for it and then plug it in prior to running. I wrote a blog post that includes setup for this device. Link [here](https://www.ericholub.com/blog/wifi-deauth/).
+I use an ALFA AWUS1900 Wi-Fi Adapter to broadcast the Wi-Fi network. You'll want to install the Kali drivers for it and then plug it in prior to running. I wrote a blog post that includes setup for this device. Link [here](https://www.ericholub.com/blog/wifi-deauth/).
 
 ## Running
 Run:
